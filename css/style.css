@@ -551,14 +551,20 @@ body {
 
 .backdrop {
   position: fixed;
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -610,6 +616,7 @@ body {
     position: absolute;
     top: 55%;
     left: 14px;
+    /* transform: translateY(-50%); */
    
     
 }
@@ -626,12 +633,12 @@ body {
   padding: 11px 12px 11px 42px;
   font-size: 14px;
 }
-
+.modal-input:hover,
 .modal-input:focus{
  border: 1px solid var(--accent-color);
  
 }
-
+.modal-input:hover+.modal-icon,
 .modal-input:focus+.modal-icon{
     fill: var(--accent-color);
 }
@@ -730,13 +737,19 @@ justify-content: center;
 align-items: center;
 }
 
+.btn-close:hover,
+.btn-close:focus{
+  cursor: pointer;
+ 
+}
+.btn-close:hover .form-close,
+.btn-close:focus .form-close {
+  fill: var(--accent-color);
+}
+
 .form-close{
  width: 18px;
 height: 18px;
 fill: rgba(0, 0, 0, 1);
 }
 
-.form-close:hover,
-.form-close:focus {
-    fill: var(--accent-color);
-}

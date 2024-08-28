@@ -53,7 +53,7 @@
       <section class="hero">
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-btn">Замовити послугу</button>
+        <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="advant">
@@ -379,52 +379,56 @@
               </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="modal-form">
           <div class="form-box">
-          <label class="modal-label" for="name">Ім'я</label>
+          <label class="modal-label" for="name">Ім'я
             <input type="text" class="modal-input" id="name">
           <svg class="modal-icon">
             <use href="./img/symbol-defs.svg#icon-person"></use>
           </svg>
+          </label>
           </div>
           <div class="form-box">
-           <label class="modal-label" for="tel">Телефон</label>
+           <label class="modal-label" for="tel">Телефон
             <input type="tel" class="modal-input" id="tel">
          
            <svg class="modal-icon">
             <use href="./img/symbol-defs.svg#icon-phone"></use>
           </svg>
+          </label>
           </div>
           <div class="form-box">
-          <label class="modal-label" for="post">Пошта</label>
+          <label class="modal-label" for="post">Пошта
             <input type="email" class="modal-input" id="post">
           
           <svg class="modal-icon">
             <use href="./img/symbol-defs.svg#icon-email"></use>
           </svg>
+          </label>
           </div>
-          <label class="modal-label" for="coment">Коментар</label>
+          <label class="modal-label" for="coment">Коментар
             <textarea name="feedback" placeholder="Введіть текст" class="modal-coment" id="coment"></textarea>
-          
+          </label>
           <div class="modal-wrap">
-          <label class="modal-checked" for="check"></label>
+          <label class="modal-checked" for="check">
             <input type="checkbox" class="modal-check" id="check">
-          
+          </label>
           <div>
           <span class="modal-span">Погоджуюся з розсилкою та приймаю</span>
           <a href="" class="modal-link">Умови договору</a>
           </div>
           </div>
           <button type="submit" class="modal-btn">Відправити</button>
-          <button type="button" class="btn-close"><svg class="form-close">
+          <button type="button" class="btn-close" data-modal-close><svg class="form-close">
             <use href="./img/symbol-defs.svg#icon-close"></use>
           </svg></button>
           
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
