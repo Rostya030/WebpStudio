@@ -396,7 +396,7 @@
         <form class="modal-form">
           <div class="form-box">
           <label class="modal-label" for="name">Ім'я
-            <input type="text" class="modal-input" id="name">
+            <input type="text" class="modal-input" id="name" required>
           <svg class="modal-icon">
             <use href="./img/symbol-defs.svg#icon-person"></use>
           </svg>
@@ -404,7 +404,7 @@
           </div>
           <div class="form-box">
            <label class="modal-label" for="tel">Телефон
-            <input type="tel" class="modal-input" id="tel">
+            <input type="tel" class="modal-input" id="tel" required pattern="^(\+?38)?0\d{9}$" placeholder="+380501234567">
          
            <svg class="modal-icon">
             <use href="./img/symbol-defs.svg#icon-phone"></use>
@@ -413,7 +413,7 @@
           </div>
           <div class="form-box">
           <label class="modal-label" for="post">Пошта
-            <input type="email" class="modal-input" id="post">
+            <input type="email" class="modal-input" id="post" required>
           
           <svg class="modal-icon">
             <use href="./img/symbol-defs.svg#icon-email"></use>
@@ -421,16 +421,14 @@
           </label>
           </div>
           <label class="modal-label" for="coment">Коментар
-            <textarea name="feedback" placeholder="Введіть текст" class="modal-coment" id="coment"></textarea>
+            <textarea name="feedback" placeholder="Введіть текст" class="modal-coment" id="coment" required></textarea>
           </label>
           <div class="modal-wrap">
           <label class="modal-checked" for="check">
-            <input type="checkbox" class="modal-check" id="check">
+            <input type="checkbox" class="modal-check" id="check" required>
+            <span class="modal-span">Погоджуюся з розсилкою та приймаю</span>
           </label>
-          <div>
-          <span class="modal-span">Погоджуюся з розсилкою та приймаю</span>
-          <a href="" class="modal-link">Умови договору</a>
-          </div>
+          <a href="#" class="modal-link"> Умови договору</a>
           </div>
           <button type="submit" class="modal-btn">Відправити</button>
           <button type="button" class="btn-close" data-modal-close><svg class="form-close">
