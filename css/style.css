@@ -42,6 +42,19 @@ body {
   line-height: 1.38;
   letter-spacing: 0.78px;
   margin-right: 93px;
+  animation-name: logo-scale;
+  animation-duration: 5000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo-scale{
+  0%{
+    transform: scale(0.9);
+  }
+  100%{
+  transform: scale(1.1);
+  }
 }
 
 .header-color {
@@ -157,6 +170,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  overflow: hidden;
 }
 
 /* .hero .container{
@@ -178,7 +192,25 @@ body {
   margin-bottom: 30px;
   /* position: sticky;
   top: 0px; */
+  animation-name: title-move;
+  animation-duration: 2000ms;
+  
+  /* transform: translateX(-1000px); */
 }
+
+
+@keyframes title-move{
+  0%{
+   transform: translateX(-1500px) scale(0);
+   color: var(--logo-color);
+  }
+  100%{
+  transform: translateX(0) scale(1);
+  color: var(--title-color);
+  }
+}
+
+
 
 .hero-btn {
   color: var(--title-color);
@@ -192,6 +224,25 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+   animation-name: btn-move;
+  animation-duration: 2000ms;
+}
+
+
+
+@keyframes btn-move{
+  0%{
+   transform: translateX(1500px) rotate(0) scale(0);
+   color: var(--logo-color);
+   background-color: red;
+  
+  }
+  100%{
+  transform: translateX(0) rotate(360deg) scale(1);
+   color: var(--title-color);
+    background-color: var(--accent-color);
+   
+  }
 }
 
 .advant {
@@ -269,6 +320,8 @@ body {
 .work-item {
   position: relative;
 }
+
+
 
 .work-wrap {
   padding-top: 27px;
@@ -354,14 +407,18 @@ body {
   gap: 10px;
 }
 
-.team-itm:hover {
-  .team-link {
+
+  .team-link:hover,
+  .team-link:focus {
+    border:none;
     background-color: var(--accent-color);
-  }
+   outline: 0px solid var(--accent-color);
+  
   .team-icon {
     fill: var(--title-color);
   }
 }
+
 
 .team-link {
   padding: 12px 12px;
