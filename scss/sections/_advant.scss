@@ -1,52 +1,58 @@
-
 .advant {
   padding-top: 94px;
-}
 
-.advant-list {
-  display: flex;
-  gap: 30px;
-}
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
 
-.advant-item::before {
-  content: "";
-  margin-bottom: 30px;
-  display: block;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background-color: var(--team-background);
-  background-image: url(../img/antenna.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  &__item {
+    // position: relative;
 
-.advant-item:nth-child(2)::before {
-  background-image: url(../img/clock.png);
-}
+    &::before {
+      content: "";
+      margin-bottom: 30px;
+      display: block;
+      width: 270px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: var(--team-background);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
-.advant-item:nth-child(3)::before {
-  background-image: url(../img/diagram.png);
-}
+    &:nth-child(1)::before {
+      background-image: url(../img/antenna.png);
+    }
 
-.advant-item:nth-child(4)::before {
-  background-image: url(../img/astronaut.png);
-}
+    &:nth-child(2)::before {
+      background-image: url(../img/clock.png);
+    }
 
-.advant-title {
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+    &:nth-child(3)::before {
+      background-image: url(../img/diagram.png);
+    }
 
-.advant-text {
-  color: var(--added-text);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.4px;
+    &:nth-child(4)::before {
+      background-image: url(../img/astronaut.png);
+    }
+  }
+
+  &__title {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--added-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.4px;
+  }
 }

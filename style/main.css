@@ -150,7 +150,6 @@ h1, h2, h3, p {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  /* background-image: url(../img/hero.webp); */
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -158,30 +157,21 @@ h1, h2, h3, p {
   text-align: center;
   overflow: hidden;
 }
-
-/* .hero .container{
- position: relative;
- outline: 1px solid red;
-} */
-.hero-title {
+.hero__title {
   color: var(--title-color);
   text-align: center;
   font-size: 44px;
   font-weight: 900;
-  line-height: 1.36; /* 136.364% */
+  line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
   width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  /* position: sticky;
-  top: 0px; */
   animation-name: title-move;
   animation-duration: 2000ms;
-  /* transform: translateX(-1000px); */
 }
-
 @keyframes title-move {
   0% {
     transform: translateX(-1500px) scale(0);
@@ -192,12 +182,12 @@ h1, h2, h3, p {
     color: var(--title-color);
   }
 }
-.hero-btn {
+.hero__btn {
   color: var(--title-color);
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.87; /* 187.5% */
+  line-height: 1.87;
   letter-spacing: 0.96px;
   background-color: var(--accent-color);
   padding: 10px 32px;
@@ -207,7 +197,6 @@ h1, h2, h3, p {
   animation-name: btn-move;
   animation-duration: 2000ms;
 }
-
 @keyframes btn-move {
   0% {
     transform: translateX(1500px) rotate(0) scale(0);
@@ -220,16 +209,15 @@ h1, h2, h3, p {
     background-color: var(--accent-color);
   }
 }
+
 .advant {
   padding-top: 94px;
 }
-
-.advant-list {
+.advant__list {
   display: flex;
   gap: 30px;
 }
-
-.advant-item::before {
+.advant__item::before {
   content: "";
   margin-bottom: 30px;
   display: block;
@@ -237,24 +225,22 @@ h1, h2, h3, p {
   height: 120px;
   border-radius: 4px;
   background-color: var(--team-background);
-  background-image: url(../img/antenna.png);
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.advant-item:nth-child(2)::before {
+.advant__item:nth-child(1)::before {
+  background-image: url(../img/antenna.png);
+}
+.advant__item:nth-child(2)::before {
   background-image: url(../img/clock.png);
 }
-
-.advant-item:nth-child(3)::before {
+.advant__item:nth-child(3)::before {
   background-image: url(../img/diagram.png);
 }
-
-.advant-item:nth-child(4)::before {
+.advant__item:nth-child(4)::before {
   background-image: url(../img/astronaut.png);
 }
-
-.advant-title {
+.advant__title {
   color: var(--text-color);
   font-size: 14px;
   font-weight: 700;
@@ -263,8 +249,7 @@ h1, h2, h3, p {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
-.advant-text {
+.advant__text {
   color: var(--added-text);
   font-size: 14px;
   font-weight: 400;
