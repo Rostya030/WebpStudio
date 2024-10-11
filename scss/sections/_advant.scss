@@ -21,7 +21,7 @@
       background-repeat: no-repeat;
     }
 
-    &:nth-child(1)::before {
+    &:first-child::before {
       background-image: url(../img/antenna.png);
     }
 
@@ -33,7 +33,7 @@
       background-image: url(../img/diagram.png);
     }
 
-    &:nth-child(4)::before {
+    &:last-child::before {
       background-image: url(../img/astronaut.png);
     }
   }
