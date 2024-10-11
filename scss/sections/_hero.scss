@@ -15,7 +15,7 @@
 
   
 &__title {
-  color: var(--title-color);
+  color: $title-color;
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -35,24 +35,24 @@
 @keyframes title-move{
   0%{
    transform: translateX(-1500px) scale(0);
-   color: var(--logo-color);
+   color: $logo-color;
   }
   100%{
   transform: translateX(0) scale(1);
-  color: var(--title-color);
+  color: $title-color;
   }
 }
 
 
 
 &__btn {
-  color: var(--title-color);
+  color: $title-color;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87; 
   letter-spacing: 0.96px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
@@ -66,14 +66,14 @@
 @keyframes btn-move{
   0%{
    transform: translateX(1500px) rotate(0) scale(0);
-   color: var(--logo-color);
+   color: $logo-color;
    background-color: red;
   
   }
   100%{
   transform: translateX(0) rotate(360deg) scale(1);
-   color: var(--title-color);
-    background-color: var(--accent-color);
+   color: $title-color;
+    background-color: $accent-color;
    
   }
 }

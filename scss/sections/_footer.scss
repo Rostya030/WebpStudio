@@ -2,7 +2,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--footer-background);
+  background-color: $footer-background;
 
   & > .container {
   display: flex;
@@ -15,7 +15,7 @@
 
 
 &__logo {
-  color: var(--title-color);
+  color: $title-color;
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -24,7 +24,7 @@
 }
 
 &__color {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 &__address {
@@ -37,7 +37,7 @@
 }
 
 &__position {
-  color: var(--title-color);
+  color: $title-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -54,7 +54,7 @@
 }
 
 &__link {
-  color: var(--footer-numbers);
+  color: $footer-numbers;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -62,7 +62,7 @@
 }
 
 &__title {
-  color: var(--title-color);
+  color: $title-color;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -88,7 +88,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
    &:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
@@ -96,7 +96,7 @@
 &__icon {
   width: 20px;
   height: 20px;
-  fill: var(--title-color);
+  fill: $title-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -111,7 +111,7 @@
 
 
 &__subscribe {
-  color: var(--title-color);
+  color: $title-color;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -128,7 +128,7 @@
 }
 
 &__input {
-  color: var(--footer-numbers);
+  color: $footer-numbers;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
@@ -144,8 +144,8 @@
 }
 
 &__btn {
-  color: var(--title-color);
-  background-color: var(--accent-color);
+  color: $title-color;
+  background-color: $accent-color;
   padding: 10px 28px;
   text-align: center;
   font-size: 16px;
@@ -163,7 +163,7 @@
 &__plane {
   width: 24px;
   height: 24px;
-  fill: var(--title-color);
+  fill: $title-color;
 }
 
 }

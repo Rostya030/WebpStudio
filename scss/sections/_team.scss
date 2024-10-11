@@ -2,10 +2,10 @@
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
-  background-color: var(--team-background);
+  background-color: $team-background;
 
   &__title {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -36,7 +36,7 @@
   }
 
   &__name {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -46,7 +46,7 @@
   }
 
   &__taxt {
-    color: var(--added-text);
+    color: $added-text;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -74,11 +74,11 @@
     &:hover,
     &:focus {
       border: none;
-      background-color: var(--accent-color);
-      outline: 0px solid var(--accent-color);
+      background-color: $accent-color;
+      outline: 0px solid $accent-color;
 
       .team__icon {
-        fill: var(--title-color);
+        fill: $title-color;
       }
     }
   }

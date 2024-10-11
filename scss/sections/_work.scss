@@ -5,7 +5,7 @@
   text-align: center;
 
   &__title {
-  color: var(--text-color);
+  color: $text-color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -35,7 +35,7 @@
 }
 
 &__deck {
-  color: var(--title-color);
+  color: $title-color;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
