@@ -401,62 +401,62 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form class="modal-form">
-          <div class="form-box">
-            <label class="modal-label" for="name"
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal__form">
+          <div class="modal__box">
+            <label class="modal__label" for="name"
               >Ім'я
-              <input type="text" class="modal-input" id="name" required />
-              <svg class="modal-icon">
+              <input type="text" class="modal__input" id="name" required />
+              <svg class="modal__icon">
                 <use href="./img/symbol-defs.svg#icon-person"></use>
               </svg>
             </label>
           </div>
-          <div class="form-box">
-            <label class="modal-label" for="tel"
+          <div class="modal__box">
+            <label class="modal__label" for="tel"
               >Телефон
               <input
                 type="tel"
-                class="modal-input"
+                class="modal__input"
                 id="tel"
                 required
                 pattern="^(\+?38)?0\d{9}$"
                 placeholder="+380501234567" />
 
-              <svg class="modal-icon">
+              <svg class="modal__icon">
                 <use href="./img/symbol-defs.svg#icon-phone"></use>
               </svg>
             </label>
           </div>
-          <div class="form-box">
-            <label class="modal-label" for="post"
+          <div class="modal__box">
+            <label class="modal__label" for="post"
               >Пошта
-              <input type="email" class="modal-input" id="post" required />
+              <input type="email" class="modal__input" id="post" required />
 
-              <svg class="modal-icon">
+              <svg class="modal__icon">
                 <use href="./img/symbol-defs.svg#icon-email"></use>
               </svg>
             </label>
           </div>
-          <label class="modal-label" for="coment"
+          <label class="modal__label" for="coment"
             >Коментар
             <textarea
               name="feedback"
               placeholder="Введіть текст"
-              class="modal-coment"
+              class="modal__coment"
               id="coment"
               required></textarea>
           </label>
-          <div class="modal-wrap">
-            <label class="modal-checked" for="check">
-              <input type="checkbox" class="modal-check" id="check" required />
-              <span class="modal-span">Погоджуюся з розсилкою та приймаю</span>
+          <div class="modal__wrap">
+            <label class="modal__checked" for="check">
+              <input type="checkbox" class="modal__check" id="check" required />
+              <span class="modal__span">Погоджуюся з розсилкою та приймаю</span>
             </label>
-            <a href="/" class="modal-link"> Умови договору</a>
+            <a href="/" class="modal__link"> Умови договору</a>
           </div>
-          <button type="submit" class="modal-btn">Відправити</button>
-          <button type="button" class="btn-close" data-modal-close>
-            <svg class="form-close">
+          <button type="submit" class="modal__btn">Відправити</button>
+          <button type="button" class="btn__close" data-modal-close>
+            <svg class="form__close">
               <use href="./img/symbol-defs.svg#icon-close"></use>
             </svg>
           </button>
