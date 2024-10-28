@@ -1,22 +1,23 @@
 .advant {
   padding-top: 60px;
+  padding-bottom: 60px;
 
    @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 
    @media screen and (min-width: 768px) {
     flex-direction: row;
   }
-   @media screen and (min-width: 1200px) {
-    
-  }
+  
   }
 
   &__item {
@@ -26,12 +27,16 @@
       content: "";
       margin-bottom: 30px;
       display: block;
-      width: 450px;
+      width: 100%;
       height: 120px;
       border-radius: 4px;
       background-color: $team-background;
       background-position: center;
       background-repeat: no-repeat;
+
+       @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
    @media screen and (min-width: 768px) {
     width: 354px;
