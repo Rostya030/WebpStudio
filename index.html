@@ -15,7 +15,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet" />
-   
+
     <link rel="stylesheet" href="./style/main.min.css" />
   </head>
   <body>
@@ -24,6 +24,11 @@
         <a href="./index.html" class="header__logo"
           ><span class="header__color">Web</span>Studio</a
         >
+        <button type="button" class="header__button" modal-header-open>
+          <svg class="header__burger">
+            <use href="./img/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -32,36 +37,145 @@
             <li class="nav__item">
               <a href="./pages/portfolio.html" class="nav__link">Портфоліо</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="header__list">
           <li class="header__item">
             <a href="mailto:info@devstudio.com" class="header__link"
               ><svg class="header__icon">
-                <use href="./img/symbol-defs.svg#icon-mail"></use>
-                </svg><span class="header__cell">info@devstudio.com</span></a
+                <use href="./img/symbol-defs.svg#icon-mail"></use></svg
+              ><span class="header__cell">info@devstudio.com</span></a
             >
           </li>
           <li class="header__item">
             <a href="tel:+380961111111" class="header__link"
               ><svg class="header__icon">
                 <use href="./img/symbol-defs.svg#icon-tel"></use>
-                </svg>
-                <span class="header__cell">+38 096 111 11 11</span></a>
+              </svg>
+              <span class="header__cell">+38 096 111 11 11</span></a
+            >
           </li>
         </ul>
+
+        <!-- =================================================== -->
+           <div class="mob__menu backdrop is-hidden" header-modal>
+          <div class="container">
+            <button type="button" class="btn__close" modal-header-close>
+              <svg class="modal-close-icon" width="40" height="40">
+                <use href="./img/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob__menu-list">
+              <li class="mob__menu-list__item">
+                <a href="./index.html" class="mob__menu-list__link">Студия</a>
+              </li>
+              <li class="mob__menu-list__item">
+                <a href="./pages/portfolio.html" class="mob__menu-list__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob__menu-list__item">
+                <a href="" class="mob__menu-list__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mob__menu-contacts">
+              <li class="mob__menu-contacts__item">
+                <a
+                  href=""
+                  class="mob__menu-contacts__link mob__menu-contacts__link_size_big"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob__menu-contacts__item">
+                <a
+                  href=""
+                  class="mob__menu-contacts__link mob__menu-contacts__link_size_small"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob__menu-social">
+              <li class="mob__menu-social__item">
+                <a href="" class="mob__menu-social__link">Instagram</a>
+              </li>
+              <li class="mob__menu-social__item">
+                <a href="" class="mob__menu-social__link">Twitter</a>
+              </li>
+              <li class="mob__menu-social__item">
+                <a href="" class="mob__menu-social__link">Facebook</a>
+              </li>
+              <li class="mob__menu-social__item">
+                <a href="" class="mob__menu-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ========================================================== -->
+
+        <!-- <div class="mob backdrop is-hidden header-modal">
+          <div class="container">
+            <button type="button" class="mob__btn" modal-header-close>
+              <svg class="mob__icon">
+                <use href="./img/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mob__nav">
+              <ul class="mob__list">
+                <li class="mob__item">
+                  <a href="./index.html" class="mob__link">Студія</a>
+                </li>
+                <li class="mob__item">
+                  <a href="./pages/portfolio.html" class="mob__link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mob__item">
+                  <a href="#" class="mob__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="mob__items">
+              <li class="mob__elem">
+                <a href="tel:+380961111111" class="mob__contact"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob__elem">
+                <a href="mailto:info@devstudio.com" class="mob__contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob__roster">
+              <li class="mob__detail">
+                <a href="" class="mob__social">Instagram</a>
+              </li>
+              <li class="mob__detail">
+                <a href="" class="mob__social">Twitter</a>
+              </li>
+              <li class="mob__detail">
+                <a href="" class="mob__social">Facebook</a>
+              </li>
+              <li class="mob__detail">
+                <a href="" class="mob__social">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div> -->
       </div>
     </header>
     <main>
-      <section class="hero"> 
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> 
+      </section>
       <section class="advant">
         <div class="container">
           <ul class="advant__list">
@@ -95,7 +209,7 @@
           </ul>
         </div>
       </section>
-       <section class="work">
+      <section class="work">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
@@ -119,7 +233,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
@@ -274,7 +388,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <section class="client">
         <div class="container">
           <h2 class="client__title">Постійні клієнти</h2>
@@ -399,7 +513,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="modal__form">
@@ -462,7 +576,8 @@
           </button>
         </form>
       </div>
-    </div> 
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-header.js"></script>
   </body>
 </html>
